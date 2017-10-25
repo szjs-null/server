@@ -11,18 +11,30 @@
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+\View::addExtension('html', 'php');
+
+Route::get('/', function () {
+    return view('index');
+});
+Route::get('/login', function () {
+    return view('index');
+});
+Route::get('/register', function () {
+    return view('index');
+});
+Route::get('/home', function () {
+    return view('index');
+});
 
 
 //Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
 //Route::resource('users', 'UserController');
-Route::resource('session', 'SessionController');
+//Route::resource('session', 'SessionController');
 //
 //Route::post('/login', 'SessionController@store');
+
 Route::post('/api/code', 'CodeController@store');
 Route::post('/api/reg', 'Auth\\RegisterController@store');
 Route::post('/api/login', 'Auth\\LoginController@store');

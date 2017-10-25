@@ -6,9 +6,7 @@ use Aliyun\Api\Sms\Request\V20170525\SendSmsRequest;
 use Aliyun\Core\DefaultAcsClient;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Validation\Rule;
 use Ramsey\Uuid\Uuid;
 use Validator;
 class CodeController extends Controller
